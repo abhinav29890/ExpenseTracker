@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pymysql
+streamlit
+requests
+pandas
+matplotlib
+seaborn
+python-multipart
