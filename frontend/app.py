@@ -269,6 +269,14 @@ with tab2:
 
     else:
 
+        print("Columns:", df.columns.tolist())
+
+        if "expense_date" not in df.columns:
+            st.error(
+                f"expense_date column missing. Available columns: {df.columns.tolist()}"
+            )
+            st.stop()
+
         df["expense_date"] = pd.to_datetime(
             df["expense_date"]
         )
